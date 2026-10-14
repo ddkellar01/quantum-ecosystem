@@ -37,3 +37,4 @@ jobs:
           tags: |
             credkellar/quantum-ecosystem:latest
             credkellar/quantum-ecosystem:${{ github.sha }}
+
