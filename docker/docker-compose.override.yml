@@ -1,0 +1,13 @@
+version: '3.8'
+
+services:
+  quantum-swarm:
+    build:
+      context: ..
+      dockerfile: docker/Dockerfile
+    volumes:
+      - ../apps:/app/apps
+      - ../scripts:/app/scripts
+    environment:
+      - DEBUG=1
+      - SWARM_INTERVAL_SECONDS=10
