@@ -1,6 +1,6 @@
 # 🌟 Quantum Ecosystem Hub 🌟
 
-[![Docker Build and Push](https://github.com/ddkeller01/quantum-ecosystem/actions/workflows/docker-build-push.yml/badge.svg)](https://github.com/ddkeller01/quantum-ecosystem/actions/workflows/docker-build-push.yml)[span_0](start_span)[span_0](end_span)
+[![Docker Build and Push](https://github.com/ddkeller01/quantum-ecosystem/actions/workflows/docker-build-push.yml/badge.svg)](https://github.com/ddkeller01/quantum-ecosystem/actions/workflows/docker-build-push.yml)
 
 ---
 
