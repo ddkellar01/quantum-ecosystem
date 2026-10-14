@@ -1,0 +1,33 @@
+version: '3.8'
+
+services:
+  quantum-orchestrator:
+    build:
+      context: ..
+      dockerfile: docker/Dockerfile
+    image: credkellar/quantum-ecosystem:latest
+    container_name: quantum_swarm_orchestrator
+    restart: always
+    environment:
+      - SERVICE_MODE=swarm
+      - SWARM_INTERVAL_SECONDS=3600
+      - MIN_BALANCE_THRESHOLD=0.05
+    ports:
+      - "8000:8000"
+    volumes:
+      - ../backups:/app/backups
+      - ../data:/app/data
+
+  sandbox-api:
+    build:
+      context: ..
+      dockerfile: docker/Dockerfile
+    image: credkellar/quantum-ecosystem:latest
+    container_name: quantum_sandbox_api
+    restart: always
+    environment:
+      - SERVICE_MODE=sandbox
+    ports:
+      - "5000:5000"
+    volumes:
+      - ../data:/app/data
